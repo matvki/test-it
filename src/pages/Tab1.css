@@ -1,0 +1,47 @@
+.d-flex {
+    display: flex;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+#container {
+    width: 80vw;
+    height: 80vh;
+    background-color: red;
+}
+
+/* bootstrap class row and col */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    position: relative;
+    width: 40%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+button {
+    border-radius: 50px;
+}
