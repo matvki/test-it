@@ -16,15 +16,15 @@ const Tab1: React.FC = () => {
                         <IonTitle size="large">Tab 1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <div id="container" className="mx-auto">
+                <div id="container" className="mx-auto d-flex align-items-center justify-content-center flex-column">
                     <h1 className="ion-text-center">
                         Choisissez votre bouton
                     </h1>
                     <div className="d-flex justify-content-center align-items-center row">
-                        <button className="col my-auto">Bouton 1</button>
-                        <button className="col my-auto">Bouton 2</button>
-                        <button className="col my-auto">Bouton 3</button>
-                        <button className="col my-auto">Bouton 4</button>
+                        <button className="col my-auto btn d-flex align-items-center justify-content-center"><img src="assets/icon/vibration.webp" alt="volume icon" height="90%" width="40%"/></button>
+                        <button className="col my-auto btn d-flex align-items-center justify-content-center"><img src="assets/icon/volume.png" alt="volume icon" height="90%" width="60%"/></button>
+                        <button className="col my-auto btn d-flex align-items-center justify-content-center"><img src="assets/icon/picture.png" alt="volume icon" height="90%" width="50%"/></button>
+                        <button className="col my-auto btn d-flex align-items-center justify-content-center"><img src="assets/icon/mystery.png" alt="volume icon" height="90%" width="60%"/></button>
                     </div>
                 </div>
           </IonContent>
