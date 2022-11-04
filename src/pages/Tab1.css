@@ -25,31 +25,16 @@
 }
 
 #container {
+    margin-top: 50px;
     width: 80vw;
     height: 80vh;
-}
-
-/* bootstrap class row and col */
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.col {
-    position: relative;
-    width: 40%;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-bottom: 50px;
 }
 
 .btn {
     border-radius: 3px;
     height: 20vh;
     margin: 20px;
-    font-size: 25px;
     background-color: #a7a7a7;
     box-shadow: 5px 5px 5px rgb(255, 255, 255);
     transition: box-shadow 0.2s;
