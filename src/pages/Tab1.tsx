@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol, IonGrid} from '@ionic/react';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import './Tab1.css';
 import {IonReactRouter} from "@ionic/react-router";
@@ -30,13 +30,21 @@ const Tab1: React.FC = () => {
                     <h1 className="ion-text-center">
                         Choisissez votre bouton
                     </h1>
-
-                    <ion-row>
-                        <button className="col my-auto btn d-flex align-items-center justify-content-center" onClick={() => navigator.vibrate(5000)}><img src="assets/icon/vibration.webp" alt="volume icon" height="90%" width="40%"/></button>
-                        <button className="col my-auto btn d-flex align-items-center justify-content-center" onClick={() => new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3').play()}><img src="assets/icon/volume.png" alt="volume icon" height="90%" width="60%"/></button>
-                        <button className="col my-auto btn d-flex align-items-center justify-content-center" onClick={capture}><img src="assets/icon/picture.png" alt="volume icon" height="90%" width="50%"/></button>
-                        {/* do a button that redirect to Tab2*/}
-                    </ion-row>
+                    <IonGrid>
+                        <IonRow>
+                            <IonCol>
+                                <button className="btn d-flex align-items-center justify-content-center" onClick={() => navigator.vibrate(5000)}><img src="assets/icon/vibration.webp" alt="Vibration icon" height="90%" width="80%"/></button>
+                            </IonCol>
+                            <IonCol>
+                                <button className="btn d-flex align-items-center justify-content-center" onClick={() => new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3').play()}><img src="assets/icon/volume.png" alt="volume icon" height="75%" width="80%"/></button>
+                            </IonCol>
+                        </IonRow>
+                        <IonRow>
+                            <IonCol className="align-items-center justify-content-center d-flex">
+                                <button className="btn d-flex align-items-center justify-content-center" onClick={capture}><img src="assets/icon/picture.png" alt="Camera icon" height="90%" width="60%"/></button>
+                            </IonCol>
+                        </IonRow>
+                    </IonGrid>
                 </div>
           </IonContent>
     </IonPage>
