@@ -36,7 +36,7 @@ const Tab1: React.FC = () => {
                                 <button className="btn d-flex align-items-center justify-content-center" onClick={() => navigator.vibrate(5000)}><img src="assets/icon/vibration.webp" alt="Vibration icon" height="90%" width="80%"/></button>
                             </IonCol>
                             <IonCol>
-                                <button className="btn d-flex align-items-center justify-content-center" onClick={() => new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3').play()}><img src="assets/icon/volume.png" alt="volume icon" height="75%" width="80%"/></button>
+                                <button className="btn d-flex align-items-center justify-content-center" onClick={() => new Audio('assets/music.mp3').play()}><img src="assets/icon/volume.png" alt="volume icon" height="75%" width="80%"/></button>
                             </IonCol>
                         </IonRow>
                         <IonRow>
